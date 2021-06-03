@@ -1,0 +1,327 @@
+
+body {
+    background-color: #b0b0b0;
+    }
+
+.Banner {
+    display: block;
+    position: center;
+    float: center;
+    padding-bottom: 14px;
+    text-align: center;
+    }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #edade9;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #c77dc2;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.Chef {
+    display: block;
+    position: center;
+    float: left;
+    margin: 40px;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+    .Chef {
+        margin: 15px;
+        float: center;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: #edade9;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+}
+
+div.desc a {
+    font-size: 15px;
+    margin-left: 8%;
+}
+
+.article {
+    text-align: center;
+    font-family: 'Noto Serif SC', serif;
+    margin-bottom: 7%;
+    }
+#recommend h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: -13px;
+}
+
+/* Create four equal columns that sits next to each other */
+.contacts {
+    background-color: #edade9;
+    text-align: center;
+    border: 1px solid #ccc;
+    -ms-flex: 32%; /* IE10 */
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+    margin: 10px;
+}
+
+div.contacts:hover {
+  border: 1px solid #777;
+}
+
+.ContactMenu h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    }
+
+.ContactMenu {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .contacts {
+    -ms-flex: 49%;
+    flex: 49%;
+    max-width: 49%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .contacts {
+    -ms-flex: 99%;
+    flex: 99%;
+    max-width: 99%;
+  }
+}
+
+.SpecialMenu h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: -13px;
+    padding-left: 140px;
+    padding-right: 140px;
+    }
+
+.SpecialMenu p{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    }
+
+.CustomerComments {
+    display: block;
+    position: left;
+    float: left;
+    background-color: #D8E2DC;
+    width: 75%;
+    height: 250px;
+    margin-right: 4px;
+    }
+
+.CustomerComments h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: -13px;
+    }
+
+.CustomerComments p{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    }
+
+.WeeklySpecial {
+    display: block;
+    float: right;
+    position: right;
+    background-color: #D8E2DC;
+    width: 24%;
+    height: 250px;
+    }
+
+.WeeklySpecial h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: -13px;
+    }
+
+.WeeklySpecial p{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    }
+
+.button {
+    background-color: #edade9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: 25%
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 20px;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1300px) {
+    .WeeklySpecial h1 {
+        font-size: 30px;
+    }
+    .WeeklySpecial p {
+        font-size: 15px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .button {
+        margin: 0px;
+    }
+    .CustomerComments h1 {
+        font-size: 30px;
+    }
+    .CustomerComments p {
+        font-size: 15px;
+    }
+    .WeeklySpecial h1 {
+        font-size: 20px;
+    }
+    .WeeklySpecial p {
+        font-size: 10px;
+    }
+}
+
+#Footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 0.7em;
+	background-color: #2c2e38;
+	color: #d7ceb2;
+	font: "Helvetica", Arial, sans-serif;
+	border-radius: 15px 15px 0px 0px;
+	position: fixed;
+    }
+#Footer a {
+    color: #FC3;
+    }

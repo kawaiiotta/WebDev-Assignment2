@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <!-- Site navigation menu -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="Banner">
+        <img src="banners/PastryShopFront.png" style="max-width:100%;height:auto;">
+    </div>
+
+    <!-- Gallery Menu -->
+    <div class="row">
+        <div class="column">
+            <a href="applecake.html" >
+                <img src="pastry/Apple Cake.jpg" alt="Apple Cake">
+            </a>
+            <div class="desc">Apple Cake $5.50</div>
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>
+            Our Apple Cakes are made out of freshly picked apples from Europe, fine brown sugar, the best honey in the
+            world and a huge amount of love.
+            This is the best tasting Apple Cake I have ever seen. Its sweet but not to sweet and just melts in your mouth.
+            The sugar adds a crunchiness to it that is otherworldly.
+        </h1>
+
+        <h2> Taste: 10/10 </h2>
+        <hr width="7%"/>
+        <br>
+    </div>
+
+    <div id="Footer">
+      <p>Best Pastry in the world at <a href="https://www.google.com/maps/place/Willows+Shopping+Centre/@-19.3160516,146.7260799,18.54z/data=!4m12!1m6!3m5!1s0x6bd5f0913190b29f:0xf00eef2626250c0!2sWillows+Shopping+Centre!8m2!3d-19.3157662!4d146.7264632!3m4!1s0x6bd5f0913190b29f:0xf00eef2626250c0!8m2!3d-19.3157662!4d146.7264632" target="_blank">NEW LOCATION</a></p>
+      <p><a href="index.html">Home</a> | <a href="aboutus.html">About us</a> | <a href="menu.html">Menu</a> | <a href="contact.html">Contacts</a></p>
+    </div>
+
+</body>
+</html>

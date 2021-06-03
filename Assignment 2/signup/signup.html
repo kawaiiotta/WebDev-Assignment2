@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <script src="validation.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <form name="myForm" action="finishedsignup.php" onsubmit="return validationForm()" method="post" class="modal-content">
+        <div class="container">
+            <h1>Sign Up for Weekly Pastry</h1>
+            <p>Please fill out everything with a * to complete subscription.</p>
+            <hr>
+
+            <label for="Full name"><b>Full name*:</b></label><br>
+            <input type="text" id="Full name" name="Fullname" placeholder="Enter Full Name">
+            <br>
+            <label for="Email"><b>Email Address*:</b></label><br>
+            <input type="text" id="Email" name="Email" placeholder="Enter Email">
+            <br>
+
+            <label for="Dateday"><b>Birthday*:</b></label><br>
+            <input type="text" id="Dateday" name="Dateday" placeholder="Date">
+            <input type="text" id="Datemonth" name="Datemonth" placeholder="Month">
+            <br>
+
+            <label><b>Gender:</b></label><br>
+            <input type="radio" id="gendermale" name="gendermale">
+            <label for="gendermale">Male</label>
+            <input type="radio" id="genderfemale" name="genderfemale">
+            <label for="genderfemale">Female</label>
+            <input type="radio" id="gendercupake" name="gendercupake">
+            <label for="gendercupake">Cupcake</label>
+            <br>
+
+            <p><b>Which pastry do you want to add to your subscription?*</b></p>
+            <input type="checkbox" id="Apple Cake" name="AppleCake">
+            <label for="Apple Cake">Apple Cake</label><br>
+            <input type="checkbox" id="Custard Tart" name="CustardTart">
+            <label for="Custard Tart">Custard Tart</label><br>
+            <input type="checkbox" id="Donuts" name="Donuts">
+            <label for="Donuts">Donuts</label><br>
+            <input type="checkbox" id="Randy Tart" name="RandyTart">
+            <label for="Randy Tart">Randy Tart</label><br>
+            <input type="checkbox" id="Raspberry Cake" name="RaspberryCake">
+            <label for="Raspberry Cake">Raspberry Cake</label><br>
+            <input type="checkbox" id="Vanilla Slice" name="VanillaSlice">
+            <label for="Vanilla Slice">Vanilla Slice</label><br>
+            <br>
+
+            <label for="Discount"><b>Discount Coupon code:</b></label><br>
+            <input type="text" id="Discount" name="Discount">
+            <br>
+
+            <label>I want update Emails to be send:</label><br>
+            <input type="radio" id="agree" name="agree" checked>
+            <label for="agree">I agree</label>
+            <input type="radio" id="disagree" name="disagree">
+            <label for="disagree">I disagree</label>
+            <br>
+
+            <p>By creating a subscription you accept our <a href="#">Terms and Conditions</a>.</p>
+
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Complete Reservation</button>
+                <button type="button" class="cancelbtn" onclick="cancel()">Cancel</button>
+                <script>
+                    function cancel() {
+                      location.replace("../index.html")
+                    }
+                </script>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
